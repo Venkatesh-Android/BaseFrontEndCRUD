@@ -121,7 +121,19 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>BaseFrontEndCRUD</finalName>
-  </build>
+<build>
+     <finalName>BaseFrontEndCRUD</finalName>
+     <plugins>
+
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
+            <configuration>
+                <source>1.8</source> <!-- yours Java version -->
+                <target>1.8</target> <!-- yours Java version -->
+            </configuration>
+        </plugin>
+
+    </plugins>
+</build>
 </project>
